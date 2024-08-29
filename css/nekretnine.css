@@ -1,0 +1,45 @@
+h2{
+    color: #c9a959;
+    text-align: center;
+    font-size: xx-large;
+}
+#stan, #kuca, #pp{
+    display: grid;
+    row-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    column-gap: 50px;
+  }
+
+.grid-container img{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.grid-item{
+    border-style: ridge;
+    border-color: #c9a959;
+}
+p{
+    color: white;
+    font-size: large;
+    margin-left: 20px;
+}
+.grid-container #cijena{
+    text-align: right;
+    font-weight: bold;
+    color: #c9a959;
+    font-size: xx-large;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+@media (max-width: 900px) {
+    #stan, #kuća, #pp{
+        grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr));
+    }
+   
+}
+#page{
+    padding-top: 150px;
+}

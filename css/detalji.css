@@ -1,0 +1,63 @@
+#page{
+    padding-top: 150px;
+}
+#osnovno table{
+    color: white;
+    font-size: x-large;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    padding-left: 150px;
+}
+#cijena{
+    color: #c9a959;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#page #osnovno img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h2, h3{
+    text-align: center;
+    color: #c9a959;
+    font-size: xx-large;
+}
+#opis{
+    color: white;
+    border-color: #c9a959;
+    border-style: ridge;
+    width: 60%;
+    margin: 0 auto;
+    height: 250px;
+    font-size: large;
+    padding: 20px 15px;
+    background-color: #26416b;
+}
+#username{
+    font-weight: bold;
+    color: #c9a959;
+}
+#upiti{
+    text-align: center;
+}
+#upiti ul{
+    list-style-type: none;
+    width: 62%;
+    display: inline-block;
+    text-align: left;
+    margin-left: -40px;
+}
+#upiti li{
+    color: white;
+    border-color: #c9a959;
+    border-style: ridge;
+    font-size: large;
+    margin-bottom: 20px;
+    height: 100px;
+    padding-left: 10px;
+    background-color: #26416b;
+}

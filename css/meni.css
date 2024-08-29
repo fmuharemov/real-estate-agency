@@ -1,0 +1,47 @@
+body {
+    background-color: #23395d;  
+}
+#name{
+    color: #c9a959;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 150px;
+    font-size: xx-large;
+}
+#menu {
+    list-style-type: none;
+    text-align: center;
+    font-size: xx-large;
+    border-bottom-style: ridge;
+    border-bottom-color: #c9a959;
+    padding-bottom: 15px;
+    margin-top: -50px;
+}
+#menu li{
+    display: inline-block;
+    padding-left: 120px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: #c9a959;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+    margin-bottom: -100px;
+}
+header{
+    background-color: #23395d;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
