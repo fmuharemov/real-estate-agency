@@ -38,3 +38,4 @@ let SpisakNekretnina = function () {
     ucitajDetaljeNekretnine: ucitajDetaljeNekretnine,
   };
 };
+window.SpisakNekretnina = SpisakNekretnina;

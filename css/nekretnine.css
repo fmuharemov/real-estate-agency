@@ -11,10 +11,11 @@ h2{
     column-gap: 50px;
   }
 
-.grid-container img{
-    height: 70%;
+.grid-item img{
     width: 80%;
-    margin: auto;
+    height: 60%;
+    padding: 5px;
+    margin: 0 auto;
     display: block;
 }
 .grid-item{
@@ -26,7 +27,7 @@ p{
     font-size: large;
     margin-left: 20px;
 }
-.grid-container #cijena{
+.cijena{
     text-align: right;
     font-weight: bold;
     color: #c9a959;
@@ -35,7 +36,7 @@ p{
     margin-right: 10px;
 }
 @media (max-width: 900px) {
-    #stan, #kuća, #pp{
+    #stan, #kuca, #pp{
         grid-template-columns:  repeat(auto-fill, minmax(350px, 1fr));
     }
    
