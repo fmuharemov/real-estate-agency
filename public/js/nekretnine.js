@@ -1,15 +1,12 @@
 function spojiNekretnine(divReferenca, instancaModula, tip_nekretnine) {
-  let kriterij = {
+  let filtriraneNekretnine = instancaModula.filtrirajNekretnine({
     tip_nekretnine: tip_nekretnine,
-  };
-  let filtriraneNekretnine = instancaModula.filtrirajNekretnine(kriterij);
+  });
   divReferenca.innerHTML = "";
   for (let i = 0; i < filtriraneNekretnine.length; i++) {
     const nekretnina = filtriraneNekretnine[i];
-    console.log("nekretnina" + nekretnina.tip_nekretnine); //obrisi
     const nekretninaElement = document.createElement("div");
-    nekretninaElement.className = "grid-container";
-    nekretninaElement.classList.add("grid-item");
+    nekretninaElement.className = "grid-item";
     if (tip_nekretnine.toLowerCase() === "stan") nekretninaElement.id = "stan";
     else if (tip_nekretnine.toLowerCase() === "kuca")
       nekretninaElement.id = "kuca";
@@ -62,7 +59,7 @@ function spojiNekretnine(divReferenca, instancaModula, tip_nekretnine) {
     dodatno.appendChild(godinaIzgradnje);
     dodatno.appendChild(otvoriDetalje);
 */
-    divReferenca.appendChild(nekretninaElement);
+
     nekretninaElement.appendChild(slikaElement);
     nekretninaElement.appendChild(nazivElementa);
     nekretninaElement.appendChild(kvadratura);
@@ -71,6 +68,7 @@ function spojiNekretnine(divReferenca, instancaModula, tip_nekretnine) {
     nekretninaElement.appendChild(pretrageElement);
     nekretninaElement.appendChild(klikoviElement);
     nekretninaElement.appendChild(dodatno);*/
+    divReferenca.appendChild(nekretninaElement);
   }
 }
 const divStan = document.getElementById("stan");
